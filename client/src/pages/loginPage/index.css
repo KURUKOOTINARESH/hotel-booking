@@ -1,0 +1,14 @@
+.login-page-bg{
+    background-image: url('https://res.cloudinary.com/enchanting/f_auto,q_70,w_900,h_490,c_fill/et-web/2012/07/Enchanting-Travels-Pariks-memorable-travel-experiences-Qu%E1%BB%91c-%C4%91%E1%BA%A3o-Maldives.jpg');
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.5;
+}
+.login-page-bg-black{
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+}
+.input-field-box{
+    outline: 8px;
+}
