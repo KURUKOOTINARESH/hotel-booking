@@ -9,5 +9,3 @@
 ![Screenshot (531)](https://github.com/KURUKOOTINARESH/hotel-booking/assets/30923105/a1dc8076-dda3-4310-8445-e88d422b4ce2)
 
 
-https://github.com/KURUKOOTINARESH/hotel-booking/assets/30923105/d5699474-a5e9-4b2e-8c60-a37fabdcd82e
-
