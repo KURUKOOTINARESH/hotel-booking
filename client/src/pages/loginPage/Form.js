@@ -57,7 +57,7 @@ const registerSchema = yup.object().shape({
             formData.append(value,values[value]);
         }*/
         const savedUserResponse = await fetch(
-            "http://localhost:3001/auth/register",
+            "https://hotel-booking-ikjh.onrender.com/auth/register",
             {
                 method: "POST",
                 headers: {
@@ -85,7 +85,7 @@ const registerSchema = yup.object().shape({
 
     const login = async (values, onSubmitProps) => {
         dispatch({ type: "LOGIN_START" });
-        const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
+        const loggedInResponse = await fetch("https://hotel-booking-ikjh.onrender.com/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(values),
@@ -103,16 +103,17 @@ const registerSchema = yup.object().shape({
       };
 
       const onGuestLogin = async () => {
-        const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
+        /*const loggedInResponse = await fetch("https://hotel-booking-ikjh.onrender.com/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({email: "nareshkurukooti@gmail.com",password:"ABC123"}),
         });
-        const loggedIn = await loggedInResponse.json();
-        if (loggedIn.token) {
+        const loggedIn = await loggedInResponse.json();*/
+        navigate("/home");
+        /*if (loggedIn.token) {
           localStorage.setItem("token",loggedIn.token);
-          navigate("/home");
-        }
+          //navigate("/home");
+        }*/
       };
 
     const handleFormSubmit = async (values, onSubmitProps)=>{
@@ -221,7 +222,7 @@ const registerSchema = yup.object().shape({
                             </Button>
                             <Button
                                 sx={{gridColumn:"span 2",marginLeft:"2rem",color:"black",fontWeight:"bold"}}
-                                type="submit"
+                                type="button"
                                 onClick={onGuestLogin}
                             >
                                 {isLogin && "Login as a Guest"}

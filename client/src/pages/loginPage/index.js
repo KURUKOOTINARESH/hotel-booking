@@ -34,8 +34,14 @@ const LoginPage = () => {
           Welcome to Booking.com for awesome hotel bookings !
         </Typography>
         <Typography  fontSize="12px" variant="h5" sx={{ mb: "1.5rem" }}>
-          Please click on 'Login as a Guest' button to get into the page or register a account
+          Please click on 'Login as a Guest' button and wait few seconds to get into the page or register a account
         </Typography>
+        <Typography  fontSize="12px" variant="h5" sx={{ mb: "1.5rem" }}>
+        You can use below login credentials also <br/>
+        email: nareshkurukooti@gmail.com<br/>
+        password: ABC123<br/>
+        </Typography>
+        
         <Form />
       </Box>
     </Box>

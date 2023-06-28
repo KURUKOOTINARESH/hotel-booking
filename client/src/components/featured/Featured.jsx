@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Featured = () => {
 
-  const {data,loading,error} = useFetch("http://localhost:3001/hotels/countByCity?cities=berlin,madrid,london")
+  const {data,loading,error} = useFetch("https://hotel-booking-ikjh.onrender.com/hotels/countByCity?cities=berlin,madrid,london")
   const dates=[
     {
       startDate: new Date(),
